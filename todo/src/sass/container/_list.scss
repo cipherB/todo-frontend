@@ -1,0 +1,29 @@
+.category {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+    grid-auto-flow: dense;
+
+    &_item {
+        padding: 10vh 15vh;
+        display: block;
+        margin: 10vh 10vh;
+        background-color: white;
+        border: 3px solid rgb(172, 165, 165);
+        border-radius: 10%;
+        align-items: center;
+        
+        @include respond(phone) {
+            padding: 5vh 5vh;
+        }
+        
+        img {
+           max-width: 12vh;
+           max-height: 12vh;
+           align-self: center;
+
+           @include respond(phone) {
+            padding: 2vh 2vh;
+        }
+        }
+    }
+}

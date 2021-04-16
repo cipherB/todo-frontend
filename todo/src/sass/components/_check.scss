@@ -1,0 +1,16 @@
+.check {
+    display: flex;
+    margin: 1rem;
+
+    &_btn {
+        margin: 1rem;
+        padding: 0.4rem;
+        font-size: 0.8rem;
+
+        @include respond(phone) {
+            margin: 0.3rem 0.3rem 0rem 0.3rem;
+            font-size: 0.4rem;
+            padding: 0.2rem;
+        }
+    }
+}

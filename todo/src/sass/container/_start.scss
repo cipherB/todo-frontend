@@ -1,0 +1,47 @@
+body {
+    background-color: rgba(46, 206, 255, 0.822);
+    background-image: url(../../assets/desk.png);
+}
+
+#vid {
+    min-width: 100%;
+    min-height: 100%;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+
+    @include respond(phone) {
+        left: 0;
+        max-height: 20%;
+        min-width: 10px;
+    }
+}
+
+
+.content {
+    position: relative;
+    bottom: 0;
+    margin-top: 10%;
+    background: rgba(0, 0, 0, 0.37);
+    border-radius: 10%;
+    color: whitesmoke;
+    width: 100%;
+    padding: 20px;
+    z-index: 1;
+    font-family: 'New Tegomin', serif;
+
+    @include respond(phone) {
+        border-radius: 50%;
+    }
+
+}
+
+.start-btn {
+    border-radius: 20%;
+    padding: 20px;
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+}

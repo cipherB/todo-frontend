@@ -53,7 +53,7 @@ const Family = () => {
             }))
         }
         {(count === 0) ? (
-            <h1>List is empty</h1>
+            <h1 className="empty_list" >List is empty</h1>
         ) : null}
     </div>
     )

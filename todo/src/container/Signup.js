@@ -19,6 +19,7 @@ const Signup = ({setAlert, signup, isAuthenticated}) => {
 
     const onSubmit = e => {
         e.preventDefault();
+        console.log('username ',email)
 
         if (password1 !== password2) {
             setAlert('Passwords do not match', 'error');
@@ -35,7 +36,7 @@ const Signup = ({setAlert, signup, isAuthenticated}) => {
             <h1 className='auth_title' >Sign Up</h1>
             <p className='auth_lead' >Create your account</p>
             <form className='auth_form' onSubmit={e => onSubmit(e)} >
-            <div className='auth_form_group' >
+                <div className='auth_form_group' >
                     <input 
                         className='auth_form_input' 
                         type='text' 

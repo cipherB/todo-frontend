@@ -20,6 +20,7 @@
             color: rgb(71, 69, 70);
             margin-top: -5em;
             text-transform: uppercase;
+            font-family: 'Dancing Script', cursive;
 
             @include respond(phone) {
                 font-size: 30px;
